@@ -18,5 +18,7 @@ public class abstract_practice {
     public static void main(String[] args) {
         Areas triangle = new Triangle();
         triangle.area(5,4);
+        Areas ractangle = new Rect();
+        ractangle.area(5,4);
     }
 }
