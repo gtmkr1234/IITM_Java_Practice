@@ -28,6 +28,6 @@ public class test87 {
         bird a1 = new bird();
         a1.fly();
         a1.move();
-        a1.travel();
+//        a1.travel(); It generates an error because flyable amd moveable interfaces both have a default method with same name
     }
 }
