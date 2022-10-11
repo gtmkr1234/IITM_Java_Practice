@@ -1,3 +1,5 @@
+package weeks_practice;
+
 interface Areas{
     void area(float a, float b);
 }

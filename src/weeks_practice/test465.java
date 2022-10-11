@@ -1,3 +1,5 @@
+package weeks_practice;
+
 interface Shape{
     public double area();
     public default double volume(){

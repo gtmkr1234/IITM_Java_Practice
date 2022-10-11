@@ -1,3 +1,5 @@
+package weeks_practice;
+
 interface best{
     int v=45;
 }
