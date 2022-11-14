@@ -18,6 +18,12 @@ class bird implements flyable,movable{
     public void fly(){
         System.out.println("wings");
     }
+
+    @Override
+    public void travel() {
+        flyable.super.travel();
+    }
+
     public void move(){
         System.out.println("legs");
     }
