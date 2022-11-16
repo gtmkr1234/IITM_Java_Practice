@@ -12,7 +12,7 @@ public class rf1 {
 
 }
 class r2{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
         rf1 obj = new rf1();
         Class c= obj.getClass();
         Constructor[] cr = c.getConstructors();
@@ -31,5 +31,6 @@ class r2{
             System.out.println(fld);
         }
 
+        System.out.println(m[0].invoke(5,4));
     }
 }
