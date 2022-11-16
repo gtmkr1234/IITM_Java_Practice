@@ -1,22 +1,35 @@
 package reflections;
+import java.lang.reflect.*;
+import java.util.Arrays;
 
 public class rf1 {
-    public static void main(String[] args) {
-        Integer obj = new Integer(55);
-        Class<? extends Integer> a = obj.getClass();
-        System.out.println("Class name is :");
-        System.out.println(a);
+    Integer a;
+    String name;
+    public rf1(){
+        a=15;
+        name = "Krishna";
     }
+
 }
-
 class r2{
-    public static boolean isEqualClass(Object o1, Object o2){
-        Class c1 = o1.getClass();
-        Class c2 = o2.getClass();
-        return (c1==c2);
-    }
-
     public static void main(String[] args) {
-        System.out.println(isEqualClass(new Integer(78), new Integer(45)));
+        rf1 obj = new rf1();
+        Class c= obj.getClass();
+        Constructor[] cr = c.getConstructors();
+        Method[] m = c.getMethods();
+        Field[] f = c.getFields();
+        System.out.println("Constructors are:-");
+        for(Constructor rs: cr){
+            System.out.println(rs);
+        }
+        System.out.println("\n Methods are :-");
+        for(Method u : m){
+            System.out.println(u);
+        }
+        System.out.println("\n fields are as follows:-");
+        for(Field fld: f){
+            System.out.println(fld);
+        }
+
     }
 }
