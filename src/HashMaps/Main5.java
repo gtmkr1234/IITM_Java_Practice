@@ -1,3 +1,5 @@
+//delete all values in HashMap
+
 package HashMaps;
 
 import java.util.HashMap;
